@@ -6,10 +6,9 @@ pipeline {
         echo 'Hello World'
       }
     }
-    stage('error') {
-      agent any
+    stage('Deploy') {
       steps {
-        sh 'java --version'
+        input 'Should we continue'
       }
     }
   }
