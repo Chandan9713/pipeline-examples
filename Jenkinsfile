@@ -1,3 +1,9 @@
+pipeline
+{
+      agent any
+      stages
+      {
+
 stage('Deploy') {
       options {
         timeout(time: 30, unit: 'SECONDS') 
@@ -13,3 +19,5 @@ stage('Deploy') {
         echo "Deploying ${APP_VERSION}."
       }
     }
+      }
+}
