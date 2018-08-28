@@ -20,4 +20,9 @@ stage('Deploy') {
       }
     }
       }
+      post {
+    aborted {
+      echo 'Why didn\'t you push my button?'
+    }
+  }
 }
